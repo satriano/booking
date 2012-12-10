@@ -18,10 +18,11 @@
          <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                <a class="brand" href="/index.php?page=home">The Lowry Booking System</a>
+                <a class="brand" href="/index.php?action=home">The Lowry Booking System</a>
                 <ul class="nav">
-                    <li><a class="active" href="/index.php?page=home">Home</a></li>
-                    <li><a href="/index.php?page=makeBookingView">Make Booking</a></li>
+                    <li><a class="active" href="/index.php?action=home">Home</a></li>
+                    <li><a href="/index.php?action=bookingform">Make Booking</a></li>
+                    <li><a href="/index.php?action=viewbookings">View Bookings</a></li>
                 </ul>
                 </div>
             </div>

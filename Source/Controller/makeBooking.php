@@ -1,4 +1,3 @@
-
 <?php
 if(isset($_POST['name']) && isset($_POST['department']) 
     && isset($_POST['email']) && isset($_POST['datefrom']) && 
@@ -21,7 +20,7 @@ $message + wordwrap($message, 70);
 try{
     if(mail($to, $subject, $message, $headers))
     {
-        header("Refresh: 3; url=http://booking.lowry.com/");
+        header("Refresh: 3; url=/index.php?action=bookingform");
         echo "Booking was successful, redirecting to booking form...";
     }else{
         echo("Mail could not be sent");

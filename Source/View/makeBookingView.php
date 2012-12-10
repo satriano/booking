@@ -1,5 +1,7 @@
+<?php include ("View/header.php"); ?>
 <div class="page-header"><h1>Equipment Booking Form</h1></div>
-<form class="form-horizontal" method="post" action="/Controller/makeBooking.php">
+<div>
+<form class="form-horizontal" method="post" action="/index.php?action=makebooking">
 
      <div class="control-group">
             <label class="control-label" for="name">Name</label>
@@ -102,3 +104,5 @@
         <input class="btn btn-primary" type="submit" value="Submit" />
     </div>
 </form>
+</div>
+<?php include ("View/footer.php"); ?>
