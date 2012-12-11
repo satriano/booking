@@ -19,13 +19,10 @@ class Database {
         $this->db = $db;
         $this->user = $user;
         $this->pass = $pass;
-        
-        $this->connect();
     }
     
     function connect()
     {
-        
     }
     
     public function query($query)
@@ -35,7 +32,6 @@ class Database {
     
     function close()
     {
-        
     }
 }
 
