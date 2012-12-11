@@ -6,11 +6,11 @@
  * @author edwardsj
  */
 class Database {
-    public $dbType; //Specifies the database technology to be used.
-    public $host;
-    public $db; //Specifies the database to use.
-    public $user;
-    public $pass;
+    private $dbType; //Specifies the database technology to be used.
+    private $host;
+    private $db; //Specifies the database to use.
+    private $user;
+    private $pass;
     
     public function __construct($dbType, $host, $db, $user, $pass)
     {
@@ -21,7 +21,7 @@ class Database {
         $this->pass = $pass;
     }
     
-    function connect()
+    public function connect()
     {
     }
     
@@ -30,7 +30,7 @@ class Database {
         return $result;
     }
     
-    function close()
+    public function close()
     {
     }
 }
