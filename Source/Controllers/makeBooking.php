@@ -20,7 +20,7 @@ $message + wordwrap($message, 70);
 try{
     if(mail($to, $subject, $message, $headers))
     {
-        header("Refresh: 3; url=/index.php?action=bookingform");
+        header("Refresh: 3; url=/index.php?module=booking&action=new");
         echo "Booking was successful, redirecting to booking form...";
     }else{
         echo("Mail could not be sent");

@@ -1,7 +1,7 @@
 <?php include ("Views/header.php"); ?>
 <div class="page-header"><h1>Equipment Booking Form</h1></div>
 <div>
-<form class="form-horizontal" method="post" action="/index.php?action=makebooking">
+<form class="form-horizontal" method="post" action="/index.php?module=booking&action=create">
 
      <div class="control-group">
             <label class="control-label" for="name">Name</label>

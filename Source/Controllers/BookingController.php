@@ -28,6 +28,9 @@ class BookingController {
                    case 'new':
                        include 'Views/makeBookingView.php';
                        break;
+                   case 'create':
+                       include 'Controllers/makeBooking.php';
+                       break;
                    case 'listall':
                        $bookings = $this->booking->getBookingList();
                        include 'Views/listBookingView.php';
