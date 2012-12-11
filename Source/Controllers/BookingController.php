@@ -25,22 +25,16 @@ class BookingController {
           {
                // run the requested action
                switch ($_GET['action']) {
-                   case 'bookingform':
+                   case 'new':
                        include 'Views/makeBookingView.php';
                        break;
-                   case 'makebooking':
-                       include 'Controllers/makeBooking.php';
-                       break;
-                   case 'viewbookings':
+                   case 'listall':
                        $bookings = $this->booking->getBookingList();
                        include 'Views/listBookingView.php';
                        break;
-                   case 'viewbooking':
+                   case 'listone':
                        $booking = $this->booking->getBooking($_GET['id']);
                        include 'Views/bookingView.php';
-                       break;
-                   case 'home':
-                       include 'Views/home.php';
                        break;
                    default:
                        include 'Views/404.php';
