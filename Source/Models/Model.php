@@ -4,7 +4,9 @@
  *
  * @author edwardsj
  */
-include_once("model/Booking.php");
+include_once("Models/Booking.php");
+include_once("Models/Database.php");
+include_once("Models/Email.php");
 
 class Model {
     public function makeBooking($name, $department, $email, $dateTo, $dateFrom, $equipment, $reason)

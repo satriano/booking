@@ -1,4 +1,4 @@
-<?php include ("View/header.php"); ?>
+<?php include ("Views/header.php"); ?>
     <div class="page-header"><h1>Booking Details</h1></div>
     <div>
         <?php
@@ -17,4 +17,4 @@
         echo 'Reason: ' . $booking->reason . '<br/><br/>';
         ?>
     </div>
-<?php include ("View/footer.php"); ?>
+<?php include ("Views/footer.php"); ?>

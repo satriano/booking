@@ -1,4 +1,4 @@
-<?php include ("View/header.php"); ?>
+<?php include ("Views/header.php"); ?>
     <div class="hero-unit">
       <h1>Welcome</h1>
       <p>This is the Lowry Equipment Booking system.</p>
@@ -8,4 +8,4 @@
         </a>
       </p>
     </div>
-<?php include ("View/footer.php"); ?>
+<?php include ("Views/footer.php"); ?>

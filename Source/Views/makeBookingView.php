@@ -1,4 +1,4 @@
-<?php include ("View/header.php"); ?>
+<?php include ("Views/header.php"); ?>
 <div class="page-header"><h1>Equipment Booking Form</h1></div>
 <div>
 <form class="form-horizontal" method="post" action="/index.php?action=makebooking">
@@ -105,4 +105,4 @@
     </div>
 </form>
 </div>
-<?php include ("View/footer.php"); ?>
+<?php include ("Views/footer.php"); ?>

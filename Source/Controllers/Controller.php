@@ -4,7 +4,7 @@
  *
  * @author edwardsj
  */
-include_once("Model/Model.php");
+include_once("Models/Model.php");
 
 class Controller {
      public $model;	
@@ -19,31 +19,31 @@ class Controller {
           if (!isset($_GET['action']))
           {
                // no specific action is requested, we'll show the homepage.
-               include 'View/home.php';
+               include 'Views/home.php';
           }
           else
           {
                // run the requested action
                switch ($_GET['action']) {
                    case 'bookingform':
-                       include 'View/makeBookingView.php';
+                       include 'Views/makeBookingView.php';
                        break;
                    case 'makebooking':
-                       include 'makeBooking.php';
+                       include 'Controllers/makeBooking.php';
                        break;
                    case 'viewbookings':
                        $bookings = $this->model->getBookingList();
-                       include 'View/listBookingView.php';
+                       include 'Views/listBookingView.php';
                        break;
                    case 'viewbooking':
                        $booking = $this->model->getBooking($_GET['id']);
-                       include 'View/bookingView.php';
+                       include 'Views/bookingView.php';
                        break;
                    case 'home':
-                       include 'View/home.php';
+                       include 'Views/home.php';
                        break;
                    default:
-                       include 'View/404.php';
+                       include 'Views/404.php';
                        break;
                }
           }
