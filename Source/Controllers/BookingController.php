@@ -1,6 +1,6 @@
 <?php
 /**
- * Description of Controller
+ * Starting point for the Booking module.
  *
  * @author edwardsj
  */
